@@ -55,6 +55,7 @@ def print_matrix(matrix: list[list[chr]]):
     for row in matrix:
         print("".join(row))
 
+
 def print_visited(matrix: list[list[list[int]]]):
     print()
     print()
@@ -62,6 +63,7 @@ def print_visited(matrix: list[list[list[int]]]):
         for cell in row:
             print(f"{str(cell):8}", end=" ")
         print()
+
 
 def process(data: str):
     char_map: list[list[chr]] = [list(line) for line in data.splitlines()]
@@ -74,7 +76,7 @@ def process(data: str):
 
     for obstacle_y in range(len(char_map)):
         for obstacle_x in range(len(char_map[obstacle_y])):
-            current +=1
+            current += 1
 
             if current % 1000 == 0:
                 print(f"{current}/{total}")
@@ -89,7 +91,5 @@ def process(data: str):
                 result += 1
 
             char_map[obstacle_y][obstacle_x] = "."
-
-
 
     print(result)

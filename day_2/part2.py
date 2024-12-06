@@ -1,4 +1,4 @@
-def check_report(report:list[int]):
+def check_report(report: list[int]):
     ascend: bool = report[0] < report[1]
 
     for index in range(1, len(report)):
@@ -17,6 +17,7 @@ def check_report(report:list[int]):
             return False
 
     return True
+
 
 def process(data: str):
     result: int = 0

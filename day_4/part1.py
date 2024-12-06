@@ -11,6 +11,7 @@ DIRECTIONS: list[tuple[int, int]] = [
 
 string_to_find: str = "XMAS"
 
+
 def walkthrough(matrix: list[list[chr]], start_x: int, start_y: int, found_matrix: list[list[chr]]) -> int:
     result: int = 0
 
@@ -52,6 +53,7 @@ def walkthrough(matrix: list[list[chr]], start_x: int, start_y: int, found_matri
 
     return result
 
+
 def print_matrix(matrix: list[list[chr]]):
     print()
 
@@ -59,6 +61,7 @@ def print_matrix(matrix: list[list[chr]]):
         print(" ".join(line))
 
     print()
+
 
 def process(data: str):
     char_matrix: list[list[chr]] = [list(line) for line in data.splitlines()]
@@ -68,6 +71,6 @@ def process(data: str):
 
     for y in range(len(char_matrix)):
         for x in range(len(char_matrix[y])):
-            result += walkthrough(char_matrix, x, y,found_matrix)
+            result += walkthrough(char_matrix, x, y, found_matrix)
 
     print(result)

@@ -9,5 +9,6 @@ def main():
 
     shutil.copytree(".template", f"day_{args.day}")
 
+
 if __name__ == '__main__':
     main()

@@ -39,7 +39,7 @@ def move(x: int, y: int, char_map: list[list[chr]], visited_map: list[list[bool]
                 return
 
         x = x + offset_x
-        y = y +offset_y
+        y = y + offset_y
 
 
 def print_matrix(matrix: list[list[chr]]):

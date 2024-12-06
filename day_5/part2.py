@@ -1,5 +1,5 @@
 def check_print(dependencies_map: dict[int, list[int]], pages: list[int]) -> bool:
-    for pageIndex in range(len(pages)-1, -1, -1):
+    for pageIndex in range(len(pages) - 1, -1, -1):
         page = pages[pageIndex]
 
         if page not in dependencies_map:
@@ -7,7 +7,7 @@ def check_print(dependencies_map: dict[int, list[int]], pages: list[int]) -> boo
 
         dependencies = dependencies_map[page]
 
-        for followingPageIndex in range(pageIndex+1, len(pages)):
+        for followingPageIndex in range(pageIndex + 1, len(pages)):
             followingPage = pages[followingPageIndex]
 
             if followingPage in dependencies:
