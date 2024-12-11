@@ -50,7 +50,7 @@ def process(data: str):
         else:
             row_dict[stone] += 1
 
-    for i in range(0, 76):
+    for i in range(0, 75):
         print(f"{i}/75")
         row_dict = blink(row_dict)
 
